@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- device-width, initial-scale=1.0 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Myafk</title>
+
+    <!-- favicon -->
+		<link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+  
+    <!-- Fonts -->
+		<link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap"/>
+
+    <!-- Styles -->
+    <!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" /> -->
+    <link rel="stylesheet" href="css/mystyle.css" type="text/css" media="all" />
+
+    <!-- Script -->
+		<script src="js/main.min.js" defer></script>
+
+    <!-- Meta for IOS -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon" />
+ </head>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__top">
+              <a href="{{ route('home') }}" class="header__logo">
+                <img src="images/global/logo.svg" alt="img"/>
+                <div class="header__logo-name">Myafk</div>
+            </a>
+              <form class="header__search-form" action="https://myafk.pro/catalog">
+								<div class="header__search">
+										<button class="header__search-button"></button>
+										<input class="header__search-input" placeholder="Я ищу" type="text" />
+										<div class="header__search-mobile">
+											<img src="images/icons/search-m.svg" alt="img" />
+										</div>
+										<button class="header__search-button-reset"></button>
+								</div>
+							</form>
+             
+              <div class="header__user">
+                <div class="header__user--logined">
+                  <a href="#" class="header__user-notiffications">
+                    <span>2</span>
+                    <img src="images/icons/notiffications.svg" alt="" />
+                  </a>
+                  <a href="#" class="header__user-avatar">
+                    <img class="header__user-avatar--ava" src="images/content/user.svg" alt=""/>
+                    <img class="header__user-avatar--toggler" src="images/icons/toggler.svg" alt=""/>
+                  </a>
+
+                  <div class="header-logined">
+                    <a href="#" class="header-logined__item">Профиль</a>
+                    <a href="#" class="header-logined__item">Настройки</a>
+                    <a href="#" class="header-logined__item notification">Сообщения <span>2</span></a>
+                    <a href="#" class="header-logined__item">Выйти</a>
+                  </div>
+                </div>
+
+                <div class="header__user--guest">
+                  <a href="#" class="header__user-signin">Войти</a>
+                  <a href="#" class="header__user-signup">Зарегистрироваться</a>
+                </div>
+              </div>
+
+              <div class="header__burger">
+                <a href="#" class="header__user-notiffications">
+                  <span>2</span>
+                  <img src="images/icons/notiffications.svg" alt="img" />
+                </a>
+                <img src="images/icons/burger.svg" alt="img" />
+              </div>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Биржа ценностей</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Лутбоксы</a>
+                </li>
+                <li class="header__menu-item active">
+                  <a href="#" class="header__menu-link">Тренеры</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Новости</a>
+                </li>
+                <li class="header__menu-item mobile-breakpoint--670">
+                  <a href="#" class="header__menu-link">Статьи</a>
+                </li>
+                <li class="header__menu-item mobile-breakpoint--670">
+                  <a href="#" class="header__menu-link">Стримы</a>
+                </li>
+                <li class="header__menu-item header__menu-item--help">
+									<a href="#" class="header__menu-link header__user-help">Помощь
+										<img class="header__user-help--toggler" src="images/icons/toggler.svg" alt="img"/>
+									</a>
+									<div class="header-help">
+                    <a class="header-logined__item open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+                      Написать в тех поддержку
+                    </a>
+                    <a href="#" class="header-logined__item">FAQ</a>
+									</div>
+								</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+ 			</header>
+
+      <div class="header-mobile">
+        <div class="header-mobile__inner">
+        <div class="header-mobile__close">
+          <img src="images/icons/close-menu.svg" alt="img" />
+        </div>
+        <div class="header-mobile__user">
+          <div class="header-mobile__user--guest">
+            <a href="#" class="header__user-signin">Войти</a>
+            <a href="#" class="header__user-signup">Зарегистрироваться</a>
+          </div>
+          <div class="header-mobile__user--logined">
+            <a href="#" class="header-mobile__user-link p">
+            <div class="header-mobile__user-ava">
+              <img src="images/content/user.svg" alt="img" />
+            </div>
+            <p class="header-mobile__user-p">Профиль</p>
+            </a>
+            <a href="#" class="header-mobile__user-link">Настройки</a>
+            <a href="#" class="header-mobile__user-link notification">Сообщения <span>2</span></a>
+            <a href="#" class="header-mobile__user-link">Выйти</a>
+          </div>
+        </div>
+        <nav class="header-mobile__list">
+          <a href="#" class="header-mobile__link mobile-breakpoint--670">Биржа ценностей</a>
+          <a href="#" class="header-mobile__link mobile-breakpoint--670">Лутбоксы</a>
+          <a href="#" class="header-mobile__link mobile-breakpoint--670 active">Тренеры</a>
+          <a href="#" class="header-mobile__link mobile-breakpoint--670">Стримы</a>
+          <a href="#" class="header-mobile__link">Новости</a>
+          <a href="#" class="header-mobile__link">Статьи</a>
+          <div class="header__menu-link header__menu-link--help">
+            <div class="help-mobile__box lk-main__box">
+              <div class="help-mobile__item lk-main__item">
+                <div class="help-mobile__item-inner lk-main__item-box">
+                  <a href="#" class="help-mobile__title header-mobile__link lk-main__item-toggler">Помощь
+                    <img src="images/icons/toggler.svg" alt="img" />
+                  </a>
+                </div>
+                <div class="header-mobile__help-list lk-main__item-more">
+                  <a class="header-mobile__help-sublink open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+                    Написать в тех поддержку
+                  </a>
+                  <a href="#" class="header-mobile__help-sublink">FAQ</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        </div>
+      </div>
+
+      <div class="search-mobile">
+        <button class="search-mobile__search"></button>
+        <input type="text" placeholder="Я ищу" />
+        <button class="search-mobile__reset"></button>
+      </div>
+
+			<!-- MAIN -->
+			<div class="main">
+        <section class="lk-head">
+          <div class="container">
+            <div class="lk-head__inner">
+              <div class="lk-head__side">
+                <h2 class="lk-head__title">Личный кабинет</h2>
+                <a href="#" class="lk-head__mail">maxim@gmail.com</a>
+              </div>
+              <div class="coaches__lk-right">
+                <div class="lk-head__balance">Баланс: 0$</div>
+
+                <a class="coaches__lk-btn open-popup" href="#popup-money" data-effect="mfp-zoom-in">
+                  Вывод средств
+                </a>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="lk-box">
+          <div class="container">
+            <div class="lk-box__inner">
+              <aside class="lk-sidebar">
+								<a href="#" class="lk-sidebar__link"> Биржа <span class="lk-sidebar__link-dots"></span></a>
+								<a href="#" class="lk-sidebar__link status"> Лутбоксы <span class="lk-sidebar__link-dots"></span></a>
+								<a href="#" class="lk-sidebar__link active status"> Тренеры <span class="lk-sidebar__link-dots"></span></a>
+							</aside>
+              <div class="lk-box__main">
+                <div class="lk-filter">
+                  <div class="lk-filter__inner">
+                    <div class="games-filter__box">
+                      <a href="#" class="games-filter__link active">Мои заказы</a>
+                      <a href="#" class="games-filter__link">Раздел тренера</a>
+                      <a href="#" class="games-filter__link">Обучение</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="lk-main">
+                  <div class="lk-main__inner">
+                    
+                    <div class="align-flex-start coaches-lk__filter lk-main__filter">
+                   
+                      <div class="select-item">
+                        <select class="select-190px games-search__select games-search__item">
+                          <option value="name">Статус</option>
+                          <option value="id">id</option>
+                          <option value="id">id</option>
+                          <option value="id">id</option>
+                          <option value="id">id</option>
+                        </select>
+                      </div>
+
+                      <div class="select-item select-item--stretch">
+                        <div class="games-search__input games-search__item no-margin">
+                          <input type="text" placeholder="Поиск по описанию" />
+                          <button></button>
+                        </div>
+                      </div>
+                     
+                      <div class="select-item">
+                        <select class="select-190px games-search__select games-search__item">
+                          <option value="name">Категория</option>
+                          <option value="id">1</option>
+                          <option value="id">2</option>
+                          <option value="id">3</option>
+                          <option value="id">4</option>
+                          <option value="id">5</option>
+                        </select>
+                      </div>
+
+                      <!-- <div class="select-item">
+                        <select class="select-stretch coaches-order__select games-search__select games-search__item">
+                          <option value="name">Все заказы</option>
+                          <option value="id">Мои покупки</option>
+                          <option value="id">Мои продажи</option>
+                        </select>
+                      </div> -->
+                      
+                    </div>
+                    <div class="coaches-order__main-box lk-main__box">
+
+                      <div class="lk-main__item confirm">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type confirm">Подтверждение оплаты</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>$214</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+
+                            <a class="lk-main__item-more-review send-review lk-main__item-more-item open-popup" href="#popup-saller-feedback" data-effect="mfp-zoom-in">
+                              Оставить отзыв
+                            </a>
+
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item working">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type finidhed">В процессе</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>$214</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="lk-main__item-more-workingReview">
+                              <a href="#" class="lk-main__item-more-button report">
+                                Пожаловаться
+                              </a>
+                              <a href="#" class="lk-main__item-more-button">
+                                Подтвердить выполнение
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item disabled">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type disabled">Отменён</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>$214</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <a class="lk-main__item-more-review send-review lk-main__item-more-item open-popup" href="#popup-saller-feedback" data-effect="mfp-zoom-in">
+                              Оставить отзыв
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item finished">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type finidhed">Выполнен</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>$214</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <div class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lk-main__item-more-review lk-main__item-more-item">
+                              Отзыв оставлен
+                              <img
+                                src="images/icons/lk-review-check.svg"
+                                alt="img"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item working">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type working">Ожидает подтверждения</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Заявка на обучение
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>$214</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <a href="#" class="lk-main__item-more-button">
+                              Выполнение
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item working">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type finidhed">В процессе</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>$214</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                   src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="lk-main__item-more-workingReview">
+                              <a href="#" class="lk-main__item-more-button report">
+                                Пожаловаться
+                              </a>
+                              <a href="#" class="lk-main__item-more-button">
+                                Подтвердить выполнение
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item working">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type finidhed">Ожидает подтверждения</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>$214</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                             src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <div class="lk-main__item-more-workingReview">
+                              <a href="#" class="lk-main__item-more-button report" style="background-color: #C6D4DF;">
+                                <img src="images/coaches/coment.svg" alt="img">
+                              </a>
+                              <a href="#" class="lk-main__item-more-button report">
+                                Отказать
+                              </a>
+                              <a href="#" class="lk-main__item-more-button">
+                                Принять
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="lk-main__item finished">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type finidhed">Выполнен</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>1544,15 ₽</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <a class="lk-main__item-more-review send-review lk-main__item-more-item open-popup" href="#popup-saller-feedback" data-effect="mfp-zoom-in">
+                              Оставить отзыв
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item finished">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type finidhed">Выполнен</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>1544,15 ₽</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <a class="lk-main__item-more-review send-review lk-main__item-more-item open-popup" href="#popup-saller-feedback" data-effect="mfp-zoom-in">
+                              Оставить отзыв
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="lk-main__item finished">
+                        <div class="lk-main__item-box">
+                          <div class="lk-main__item-indicator"></div>
+                          <div class="lk-main__item-status">
+                            № 729 536 220 от 27.05.22
+                            <div class="lk-main__item-status--type finidhed">Выполнен</div>
+                          </div>
+                          <p class="lk-main__item-info">
+                            Аккаунт ПОД ОСНОВУ DIAMOND 2 СО СКИНАМИ ВАНДАЛ ЖНЕЦ, ФАНТОМ
+                            СИНГУЛЯРНОСТЬ, ГОСТ МОНАРХ, Алмаз 2
+                          </p>
+                          <div class="lk-main__item-price">
+                            <span>Сумма заказа</span>
+                            <strong>1544,15 ₽</strong>
+                          </div>
+                          <div class="lk-main__item-toggler">
+                            <img
+                              src="images/icons/lk-toggler.svg"
+                              alt="img"
+                            />
+                          </div>
+                        </div>
+                        <div class="lk-main__item-more">
+                          <div class="lk-main__item-more-box">
+                            <div class="lk-main__item-more-server lk-main__item-more-item">
+                              <span>Сервер</span>
+                              EU
+                            </div>
+                            <div class="lk-main__item-more-count lk-main__item-more-item">
+                              <span>Игра</span>
+                              Valorant
+                            </div>
+                            <div class="lk-main__item-more-seller lk-main__item-more-item">
+                              <span>Тренер</span>
+                              <a href="#" class="games-offers__seller">
+                                <div class="games-offers__seller-ava">
+                                  <img
+                                    src="images/content/seller-ava.jpg"
+                                    alt="img"
+                                  />
+                                </div>
+                                <div class="games-offers__seller-info">
+                                  <div class="games-offers__seller-name">nickname151547</div>
+                                  <div class="games-offers__seller-rate">
+                                    <div class="games-offers__seller-rate__stars">
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span class="rate"></span>
+                                      <span></span>
+                                    </div>
+                                    <div class="games-offers__seller-rate__count">(4.4/5)</div>
+                                  </div>
+                                  <div class="games-offers__seller-old">На сайте 11 месяцев</div>
+                                </div>
+                              </a>
+                            </div>
+                            <a class="lk-main__item-more-review send-review lk-main__item-more-item open-popup" href="#popup-saller-feedback" data-effect="mfp-zoom-in">
+                              Оставить отзыв
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="lk-pagination">
+                  <a class="lk-pagination__arrow" href="#"
+                    ><svg
+                      width="6"
+                      height="12"
+                      viewBox="0 0 6 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.310932 5.70829C0.142511 5.8663 0.14251 6.1337 0.310931 6.29171L5.32632 10.9971C5.58175 11.2368 6 11.0557 6 10.7054L6 1.2946C6 0.944349 5.58175 0.763239 5.32632 1.00288L0.310932 5.70829Z"
+                        fill="#070C11"
+                      />
+                    </svg>
+                  </a>
+                  <a class="lk-pagination__item active" href="#">1</a>
+                  <a class="lk-pagination__item" href="#">2</a>
+                  <a class="lk-pagination__item" href="#">3</a>
+                  <div>
+                    <svg
+                      width="20"
+                      height="4"
+                      viewBox="0 0 20 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#070C11" />
+                      <circle cx="10" cy="2" r="2" fill="#070C11" />
+                      <circle cx="18" cy="2" r="2" fill="#070C11" />
+                    </svg>
+                  </div>
+                  <a class="lk-pagination__item" href="#">245</a>
+                  <a class="lk-pagination__arrow" href="#"
+                    ><svg
+                      width="6"
+                      height="12"
+                      viewBox="0 0 6 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.68907 5.70829C5.85749 5.8663 5.85749 6.1337 5.68907 6.29171L0.673684 10.9971C0.418255 11.2368 1.378e-07 11.0557 1.33623e-07 10.7054L2.14003e-08 1.2946C1.72237e-08 0.944349 0.418255 0.763239 0.673684 1.00288L5.68907 5.70829Z"
+                        fill="#070C11"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+			<!-- FOOTER -->
+			<footer class="footer">
+				<div class="container">
+				<div class="footer__inner">
+					<p class="footer__copy">© 2021 Название сервиса</p>
+					<div class="footer__links">
+						<a href="#" class="footer__links-item">Политика конфиденциальности</a>
+						<a href="#" class="footer__links-item">Политика cookie</a>
+					</div>
+					<div class="footer__box">
+						<div class="footer__contacts">
+						<a href="mailto:example-mail22@gmail.com" class="footer__contacts-item"
+							>example-mail22@gmail.com</a
+						>
+						<a href="tel:7091504974923" class="footer__contacts-item">+709 (150) 497-49-23</a>
+            <div class="header__menu-item footer__menu-item--help">
+              <a href="#" class="header__menu-link footer__user-help">Помощь
+                <img class="footer__user-help--toggler" src="images/icons/toggler.svg" alt="img"/>
+              </a>
+              <div class="footer-help">
+                <a class="header-logined__item open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+                  Написать в тех поддержку
+                </a>
+                <a href="#" class="header-logined__item">FAQ</a>
+              </div>
+            </div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</footer>
+		</div>
+
+    <!-- POPUP-MONEY -->
+    <div class="lk-page popup-money user-popup mfp-with-anim mfp-hide" id="popup-money">
+      <div class="popup-trainer__close close-popup">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+          d="M16 16L31.9999 31.9999"
+          stroke="#A6B1B8"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+          <path
+          d="M16.0001 31.9999L32 16"
+          stroke="#A6B1B8"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="close-popup popup-trainer__close--mobile">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+          d="M16 16L31.9999 31.9999"
+          stroke="#fff"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+          <path
+          d="M16.0001 31.9999L32 16"
+          stroke="#fff"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="popup-trainer__head user-popup__head">Вывод средств</div>
+
+      <form class="user-popup__box" autocomplete="off" data-popup="form-in">
+
+        <div class="popup-train__row">
+    
+          <div class="popup-train__item user-popup__info-inputBox">
+            <div class="popup-trainer__item-price user-popup__info-inputWrapper price">
+              <label class="popup__form-label">Количество средств</label>
+              <input class="user-popup__info-input popup-trainer__input-number" type="number" name="price" id="price" placeholder="Укажите сумму"/>
+            </div>
+            <div class="user-popup__info-status status"></div>
+          </div>
+
+          <div class="popup-train__item user-popup__info-inputBox">
+            <div class="user-popup__info-inputWrapper">
+              <label class="popup__form-label">Способ вывода</label>
+              <select class="games-search__select games-search__item">
+                <option value="name">Выберите способ</option>
+                <option value="id">1</option>
+                <option value="id">2</option>
+                <option value="id">3</option>
+                <option value="id">4</option>
+                <option value="id">5</option>
+              </select>
+            </div>
+            <div class="user-popup__info-status status"></div>
+          </div>
+          
+        </div>
+
+        <div class="popup-trainer__captcha popup__form-captcha">
+          <img src="images/content/captcha.jpg" alt="img" />
+        </div>
+
+        <div class="popup-trainer__links user-popup__links">
+          <!-- Кнопка не работает, т.к я ее в js отключил -->
+          <button type="submit" data-popup="submit" class="user-popup__link">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <!-- /POPUP-MONEY -->
+
+    <!-- POPUP-SALLER-FEEDBACK -->
+    <div class="popup-edit-offer user-popup mfp-with-anim mfp-hide" id="popup-saller-feedback">
+    <div class="popup-trainer__close close-popup">
+      <svg
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+        d="M16 16L31.9999 31.9999"
+        stroke="#A6B1B8"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        />
+        <path
+        d="M16.0001 31.9999L32 16"
+        stroke="#A6B1B8"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <div class="close-popup popup-trainer__close--mobile">
+      <svg
+        width="48"
+        height="48"
+        viewBox="0 0 48 48"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+        d="M16 16L31.9999 31.9999"
+        stroke="#fff"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        />
+        <path
+        d="M16.0001 31.9999L32 16"
+        stroke="#fff"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        />
+      </svg>
+    </div>
+    <div class="popup-trainer__head user-popup__head">Отзыв на тренера seller-nickname </div>
+
+    <form class="user-popup__box" autocomplete="off" data-popup="form-in">
+
+      <div class="popup-saller-feedback__item">
+        <div class="popup-edit-offer__label">Оцените качество</div>
+    
+        <div class="rating">
+          <input type="radio" name="star" id="star1"><label for="star1"></label>
+          <input type="radio" name="star" id="star2"><label for="star2"></label>
+          <input type="radio" name="star" id="star3"><label for="star3"></label>
+          <input type="radio" name="star" id="star4"><label for="star4"></label>
+          <input type="radio" name="star" id="star5"><label for="star5"></label>
+        </div>
+
+      </div>
+
+      <div class="popup-saller-feedback__item user-popup__info-inputBox">
+        <div class="popup-edit-offer__label">Комментарий</div>
+        <div class="popup-edit-offer__input-box">
+					<textarea class="popup-textarea popup-edit-offer__text" placeholder="Ваш комментарий"></textarea>
+				</div>
+        <div class="user-popup__info-status status"></div>
+      </div>
+      
+      <div class="popup-trainer__links user-popup__links">
+        <button type="submit" data-popup="submit" class="user-popup__link">Добавить отзыв</button>
+      </div>
+
+    </form>
+    </div>
+    <!-- /POPUP-SALLER-FEEDBACK -->
+
+    
+		<!-- POPUP-TECHSERVICE -->
+		<div class="popup-edit-offer user-popup mfp-with-anim mfp-hide" id="popup-techservice">
+			<div class="popup-trainer__close close-popup">
+				<svg
+					width="48"
+					height="48"
+					viewBox="0 0 48 48"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+					d="M16 16L31.9999 31.9999"
+					stroke="#A6B1B8"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+					<path
+					d="M16.0001 31.9999L32 16"
+					stroke="#A6B1B8"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
+			<div class="close-popup popup-trainer__close--mobile">
+				<svg
+					width="48"
+					height="48"
+					viewBox="0 0 48 48"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+					d="M16 16L31.9999 31.9999"
+					stroke="#fff"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+					<path
+					d="M16.0001 31.9999L32 16"
+					stroke="#fff"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
+			<div class="popup-trainer__head user-popup__head">Написать в техподдержку</div>
+	
+	
+	
+			<form class="user-popup__box" autocomplete="off" data-popup="form-in">
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Адрес эл. почты</div>
+					<div class="user-popup__info-inputWrapper">
+						<input class="popup-techservice__input" type="text">
+					</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="user-popup__info-inputWrapper">
+					<div class="popup-edit-offer__label">Тема</div>
+					<select class="user-popup__select" style="display: none;">
+						<option value="i">-</option>
+						<option value="i">1</option>
+						<option value="i">2</option>
+						<option value="i">3</option>
+						<option value="i">4</option>
+						<option value="i">5</option>
+					</select>
+					</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+	
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Логин</div>
+						<div class="user-popup__info-inputWrapper">
+							<input class="popup-techservice__input" type="text">
+						</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+				
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Номер заказа</div>
+					<div class="user-popup__info-inputWrapper">
+						<input class="popup-techservice__input" type="text">
+					</div>
+					<div class="popup-edit-offer__label">Если ваш запрос не связан с заказом, поставьте прочерк</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+			
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="user-popup__info-inputWrapper">
+						<div class="popup-edit-offer__input-box">
+						<div class="popup-edit-offer__label">Описание проблемы</div>
+						<div class="popup-edit-offer__input-box">
+							<textarea class="popup-textarea popup-edit-offer__text" placeholder="Постарайтесь описать всё как можно подробнее и указать все детали (это позволит решить проблему быстрее)"></textarea>
+							</div>
+					</div>
+					</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+
+
+				<div class="popup-techservice__add-box">
+					<a class="popup-techservice__add-link" href="#">Добавить файл*</a>
+					<span> или</span>
+					<div class="popup-techservice__add-space">
+						<img src="images/exchange/images.svg" alt="img">
+						<p>перетащите файлы сюда*</p>
+					</div>
+				</div>
+				<div class="popup-techservice__label">* - не обязательно</div>
+	
+				<div class="popup-trainer__links user-popup__links">
+					<button type="submit" data-popup="submit" class="user-popup__link">Отправить</button>
+				</div>
+	
+			</form>
+			</div>
+		<!-- /POPUP-TECHSERVICE -->
+
+	</body>
+</html>

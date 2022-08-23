@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- device-width, initial-scale=1.0 -->
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Myafk</title>
+
+		<!-- favicon -->
+		<link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+
+	
+		<!-- Fonts -->
+		<link rel="stylesheet" href="fonts/fonts.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap"/>
+
+		<!-- Styles -->
+		<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" /> -->
+		<link rel="stylesheet" href="css/mystyle.css" type="text/css" media="all" />
+
+		<!-- Script -->
+		<script src="js/main.min.js" defer></script>
+
+		<!-- Meta for IOS -->
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="format-detection" content="date=no" />
+		<meta name="format-detection" content="address=no" />
+		<meta name="format-detection" content="email=no" />
+
+		<!-- icon -->
+		<link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon" />
+ 	</head>
+	
+	<body>
+		<aside class="aside-mobile lk-sidebar">
+			<div class="aside-mobile__header">
+				<h2 class="sidebar-mobile__title">Фильтры</h2>
+				<div class="sidebar-mobile__close">
+					<img src="images/icons/close-menu.svg" alt="" />
+				</div>
+			</div>
+
+			<div class="catalog-trainer__aside-box games-search__box">
+	
+				<div class="catalog-trainer__aside-search games-search__input games-search__item">
+					<input type="text" placeholder="Поиск по названию" />
+					<button></button>
+				</div>
+
+				<div class="catalog-trainer__aside-price">
+					<div class="catalog-trainer__aside-price-label">Цена</div>
+					<div class="catalog-trainer__aside-price-row">
+						<div class="catalog-trainer__aside-price-item">
+							<span>от</span>
+							<input type="number">
+						</div>
+
+						<div class="catalog-trainer__aside-price-item">
+							<span>до</span>
+							<input type="number">
+						</div>
+					</div>
+				</div>
+
+				<div class="select-mb15px">
+					<div class="circul-toggler__box catalog-trainer__toggler games-search__seller games-search__item">
+						Только продавцы онлайн
+						<div class="circul-toggler games-search__seller-toggler">
+						  <div class="circul-toggler__item">
+							 <div class="circul-toggler__checkbox">
+								<input class="circul-toggler__input" id="circul-toggler01" type="checkbox" name="check-toggle01">
+								<label class="circul-toggler__label" for="circul-toggler01"></label>
+							 </div>
+						  </div>
+						</div>
+					 </div>
+				</div>
+				
+				<div class="coaches-order__main-box lk-main__box">
+					<div class="catalog-trainer__spoller lk-main__item">
+					<div class="catalog-trainer__spoller-box lk-main__item-box no-padding-right">
+						<div class="catalog-trainer__spoller-title">Игра</div>
+						<div class="catalog-trainer__spoller-toggler lk-main__item-toggler"> 
+							<img src="images/coaches/arrow-icon--gray.svg" alt="img" />
+						</div>
+					</div>
+
+					<div class="catalog-trainer__spoller-more lk-main__item-more">
+						<div class="lk-main__item-more-box">
+							<div class="catalog-trainer__aside-search games-search__input games-search__item">
+								<input type="text" placeholder="Поиск по игре" />
+								<button></button>
+							</div>
+						</div>
+
+						<div class="catalog-trainer__spoller-chekbox-box">
+							<div class="catalog-trainer__spoller-radio">
+								<div class="catalog-trainer__spoller-radio-box">
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game01" type="radio" name="aside-game">
+										<label for="aside-game01" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" checked id="aside-game02" type="radio" name="aside-game">
+										<label for="aside-game02" class="catalog-trainer__spoller-label"><span>World of Tanks</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game03" type="radio" name="aside-game">
+										<label for="aside-game03" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game04" type="radio" name="aside-game">
+										<label for="aside-game04" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game05" type="radio" name="aside-game">
+										<label for="aside-game05" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game06" type="radio" name="aside-game">
+										<label for="aside-game06" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game07" type="radio" name="aside-game">
+										<label for="aside-game07" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game08" type="radio" name="aside-game">
+										<label for="aside-game08" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game09" type="radio" name="aside-game">
+										<label for="aside-game09" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game10" type="radio" name="aside-game">
+										<label for="aside-game10" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game11" type="radio" name="aside-game">
+										<label for="aside-game11" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game12" type="radio" name="aside-game">
+										<label for="aside-game12" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game13" type="radio" name="aside-game">
+										<label for="aside-game13" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game14" type="radio" name="aside-game">
+										<label for="aside-game14" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+									<div class="catalog-trainer__spoller-radio-item">
+										<input class="catalog-trainer__spoller-input" id="aside-game15" type="radio" name="aside-game">
+										<label for="aside-game15" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<div class="select-mb8px">
+					<select class="select-stretch games-search__select games-search__item">
+						<option value="name">Сервер</option>
+						<option value="id">id</option>
+						<option value="id">id</option>
+						<option value="id">id</option>
+						<option value="id">id</option>
+					</select>
+				</div>
+			
+				<div class="select-mb8px">
+					<select class="select-stretch games-search__select games-search__item">
+						<option value="name">По опыту</option>
+						<option value="id">id</option>
+						<option value="id">id</option>
+						<option value="id">id</option>
+						<option value="id">id</option>
+					</select>
+				</div>
+
+				<button class="sidebar__filter-btn">Применить фильтр</button>
+												
+			</div>
+		</aside>
+
+		<div class="header-mobile">
+			<div class="header-mobile__inner">
+			  <div class="header-mobile__close">
+				 <img src="images/icons/close-menu.svg" alt="" />
+			  </div>
+			  <div class="header-mobile__user">
+				 <div class="header-mobile__user--guest">
+					<a href="#" class="header__user-signin">Войти</a>
+					<a href="#" class="header__user-signup">Зарегистрироваться</a>
+				 </div>
+				 <div class="header-mobile__user--logined">
+					<a href="#" class="header-mobile__user-link p">
+					  <div class="header-mobile__user-ava">
+						 <img src="images/content/user.svg" alt="" />
+					  </div>
+					  <p class="header-mobile__user-p">Профиль</p>
+					</a>
+					<a href="#" class="header-mobile__user-link">Настройки</a>
+					<a href="#" class="header-mobile__user-link">Сообщения</a>
+					<a href="#" class="header-mobile__user-link">Выйти</a>
+				 </div>
+			  </div>
+			  <nav class="header-mobile__list">
+				 <a href="#" class="header-mobile__link mobile-breakpoint--670">Биржа ценностей</a>
+				 <a href="#" class="header-mobile__link mobile-breakpoint--670">Лутбоксы</a>
+				 <a href="#" class="header-mobile__link mobile-breakpoint--670">Тренеры</a>
+				 <a href="#" class="header-mobile__link mobile-breakpoint--670">Стримы</a>
+				 <a href="#" class="header-mobile__link">Новости</a>
+				 <a href="#" class="header-mobile__link">Статьи</a>
+			  </nav>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<div class="header__top">
+							<a href="{{ route('home') }}" class="header__logo">
+                        <img src="images/global/logo.svg" alt="img"/>
+                        <div class="header__logo-name">Myafk</div>
+                    </a>
+
+							<form class="header__search-form" action="https://myafk.pro/catalog">
+								<div class="header__search">
+										<button class="header__search-button"></button>
+										<input class="header__search-input" placeholder="Я ищу" type="text" />
+										<div class="header__search-mobile">
+											<img src="images/icons/search-m.svg" alt="img" />
+										</div>
+										<button class="header__search-button-reset"></button>
+								</div>
+							</form>
+							
+							<div class="header__user">
+								<div class="header__user--logined">
+								<a href="#" class="header__user-notiffications">
+									<span>2</span>
+									<img src="images/icons/notiffications.svg" alt="" />
+								</a>
+								<a href="#" class="header__user-avatar">
+									<img class="header__user-avatar--ava" src="images/content/user.svg" alt=""/>
+									<img class="header__user-avatar--toggler" src="images/icons/toggler.svg" alt=""/>
+								</a>
+		
+								<div class="header-logined">
+									<a href="#" class="header-logined__item">Профиль</a>
+									<a href="#" class="header-logined__item">Настройки</a>
+									<a href="#" class="header-logined__item notification">Сообщения <span>2</span></a>
+									<a href="#" class="header-logined__item">Выйти</a>
+								</div>
+								</div>
+		
+								<div class="header__user--guest">
+								<a href="#" class="header__user-signin">Войти</a>
+								<a href="#" class="header__user-signup">Зарегистрироваться</a>
+								</div>
+							</div>
+
+							<div class="header__burger">
+								<a href="#" class="header__user-notiffications">
+									<span>2</span>
+									<img src="images/icons/notiffications.svg" alt="img" />
+								</a>
+								<img src="images/icons/burger.svg" alt="img" />
+							</div>
+						</div>
+						<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Биржа ценностей</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Лутбоксы</a>
+							</li>
+							<li class="header__menu-item active">
+								<a href="#" class="header__menu-link">Тренеры</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Новости</a>
+							</li>
+							<li class="header__menu-item mobile-breakpoint--670">
+								<a href="#" class="header__menu-link">Статьи</a>
+							</li>
+							<li class="header__menu-item mobile-breakpoint--670">
+								<a href="#" class="header__menu-link">Стримы</a>
+							</li>
+							<li class="header__menu-item header__menu-item--help">
+								<a href="#" class="header__menu-link header__user-help">Помощь
+									<img class="header__user-help--toggler" src="images/icons/toggler.svg" alt="img"/>
+								</a>
+								<div class="header-help">
+									<a class="header-logined__item open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+										Написать в тех поддержку
+									</a>
+									<a href="#" class="header-logined__item">FAQ</a>
+								</div>
+							</li>
+						</ul>
+						</nav>
+					</div>
+				</div>
+ 			</header>
+
+			<div class="header-mobile">
+			<div class="header-mobile__inner">
+			<div class="header-mobile__close">
+				<img src="images/icons/close-menu.svg" alt="img" />
+			</div>
+			<div class="header-mobile__user">
+				<div class="header-mobile__user--guest">
+					<a href="#" class="header__user-signin">Войти</a>
+					<a href="#" class="header__user-signup">Зарегистрироваться</a>
+				</div>
+				<div class="header-mobile__user--logined">
+					<a href="#" class="header-mobile__user-link p">
+					<div class="header-mobile__user-ava">
+					<img src="images/content/user.svg" alt="img" />
+					</div>
+					<p class="header-mobile__user-p">Профиль</p>
+					</a>
+					<a href="#" class="header-mobile__user-link">Настройки</a>
+					<a href="#" class="header-mobile__user-link notification">Сообщения <span>2</span></a>
+					<a href="#" class="header-mobile__user-link">Выйти</a>
+				</div>
+			</div>
+			<nav class="header-mobile__list">
+				<a href="#" class="header-mobile__link mobile-breakpoint--670">Биржа ценностей</a>
+				<a href="#" class="header-mobile__link mobile-breakpoint--670">Лутбоксы</a>
+				<a href="#" class="header-mobile__link mobile-breakpoint--670 active">Тренеры</a>
+				<a href="#" class="header-mobile__link mobile-breakpoint--670">Стримы</a>
+				<a href="#" class="header-mobile__link">Новости</a>
+				<a href="#" class="header-mobile__link">Статьи</a>
+				
+				<div class="header__menu-link header__menu-link--help">
+					<div class="help-mobile__box lk-main__box">
+						<div class="help-mobile__item lk-main__item">
+							<div class="help-mobile__item-inner lk-main__item-box">
+								<a href="#" class="help-mobile__title header-mobile__link lk-main__item-toggler">Помощь
+									<img src="images/icons/toggler.svg" alt="img" />
+								</a>
+							</div>
+							<div class="header-mobile__help-list lk-main__item-more">
+								<a class="header-mobile__help-sublink open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+									Написать в тех поддержку
+								</a>
+								<a href="#" class="header-mobile__help-sublink">FAQ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</nav>
+			</div>
+			</div>
+
+			<div class="search-mobile">
+				<button class="search-mobile__search"></button>
+				<input type="text" placeholder="Я ищу" />
+				<button class="search-mobile__reset"></button>
+			</div>
+			
+			<!-- MAIN -->
+			<div class="main">
+				<div class="lk-box">
+					<div class="container">
+
+						<div class="games-filter">
+							<div class="catalog-trainer__filter-inner games-filter__inner">
+								<div class="games-filter__box">
+									<a href="#" class="games-filter__link">Тренер</a>
+									<a href="#" class="games-filter__link active">Тренироваться</a>
+								</div>
+								<div class="games-filter__select">
+									<a href="#" class="active">RU</a>
+									<a href="#">EU, NA</a>
+									<a href="#">Free</a>
+									<a href="#">
+									<svg width="13" height="4" viewBox="0 0 13 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect y="0.5" width="3" height="3" rx="1.5" fill="#242621" />
+										<rect x="5" y="0.5" width="3" height="3" rx="1.5" fill="#242621" />
+										<rect x="10" y="0.5" width="3" height="3" rx="1.5" fill="#242621" />
+									</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="lk-box__inner">
+
+							<aside class="catalog-trainer__sidebar lk-sidebar">
+								<div class="catalog-trainer__aside-box games-search__box">
+									
+									<div class="catalog-trainer__aside-search games-search__input games-search__item">
+										<input type="text" placeholder="Поиск по названию" />
+										<button></button>
+									</div>
+		
+									<div class="catalog-trainer__aside-price">
+										<div class="catalog-trainer__aside-price-label">Цена</div>
+										<div class="catalog-trainer__aside-price-row">
+											<div class="catalog-trainer__aside-price-item">
+												<span>от</span>
+												<input type="number">
+											</div>
+
+											<div class="catalog-trainer__aside-price-item">
+												<span>до</span>
+												<input type="number">
+											</div>
+										</div>
+									</div>
+
+									<div class="select-mb15px">
+										<div class="circul-toggler__box catalog-trainer__toggler games-search__seller games-search__item">
+											Только продавцы онлайн
+											<div class="circul-toggler games-search__seller-toggler">
+											<div class="circul-toggler__item">
+												<div class="circul-toggler__checkbox">
+													<input class="circul-toggler__input" id="circul-toggler02" type="checkbox" name="check-toggle02">
+													<label class="circul-toggler__label" for="circul-toggler02"></label>
+												</div>
+											</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="coaches-order__main-box lk-main__box">
+										<div class="catalog-trainer__spoller lk-main__item">
+										<div class="catalog-trainer__spoller-box lk-main__item-box no-padding-right">
+											<div class="catalog-trainer__spoller-title">Игра</div>
+											<div class="catalog-trainer__spoller-toggler lk-main__item-toggler">
+												<img src="images/coaches/arrow-icon--gray.svg" alt="img" />
+											</div>
+										</div>
+
+										<div class="catalog-trainer__spoller-more lk-main__item-more">
+											<div class="lk-main__item-more-box">
+												<div class="catalog-trainer__aside-search games-search__input games-search__item">
+													<input type="text" placeholder="Поиск по игре" />
+													<button></button>
+												</div>
+											</div>
+
+											<div class="catalog-trainer__spoller-chekbox-box">
+												<div class="catalog-trainer__spoller-radio">
+													<div class="catalog-trainer__spoller-radio-box">
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game01" type="radio" name="game">
+															<label for="game01" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" checked id="game02" type="radio" name="game">
+															<label for="game02" class="catalog-trainer__spoller-label"><span>World of Tanks</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game03" type="radio" name="game">
+															<label for="game03" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game04" type="radio" name="game">
+															<label for="game04" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game05" type="radio" name="game">
+															<label for="game05" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game06" type="radio" name="game">
+															<label for="game06" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game07" type="radio" name="game">
+															<label for="game07" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game08" type="radio" name="game">
+															<label for="game08" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game09" type="radio" name="game">
+															<label for="game09" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game10" type="radio" name="game">
+															<label for="game10" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game11" type="radio" name="game">
+															<label for="game11" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game12" type="radio" name="game">
+															<label for="game12" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game13" type="radio" name="game">
+															<label for="game13" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game14" type="radio" name="game">
+															<label for="game14" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+														<div class="catalog-trainer__spoller-radio-item">
+															<input class="catalog-trainer__spoller-input" id="game15" type="radio" name="game">
+															<label for="game15" class="catalog-trainer__spoller-label"><span>Valorant</span></label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										</div>
+									</div>
+
+									<div class="select-mb8px">
+										<select class="select-stretch custom-select games-search__select games-search__item">
+											<option value="name">Сервер</option>
+											<option value="id">id</option>
+											<option value="id">id</option>
+											<option value="id">id</option>
+											<option value="id">id</option>
+										</select>
+									</div>
+
+									<div class="select-mb8px">
+										<select class="select-stretch custom-select games-search__select games-search__item">
+											<option value="name">По опыту</option>
+											<option value="id">id</option>
+											<option value="id">id</option>
+											<option value="id">id</option>
+											<option value="id">id</option>
+										</select>
+									</div>
+
+									<button class="sidebar__filter-btn">Применить фильтр</button>
+								
+								</div>
+							</aside>
+
+							<div class="catalog-trainer__main lk-box__main">
+								<div class="catalog-trainer__main-header">
+									<div class="catalog-trainer__header-btn-box">
+
+										<button class="catalog-trainer__header-btn">World of Tanks <span><img src="images/coaches/+--white.svg" alt="img"></span></button>
+										<button class="catalog-trainer__header-btn-reset">Сбросить все фильтры<span><img src="images/coaches/x--gray.svg" alt="img"></span></button>
+									</div>
+									
+									<button class="sidebar-mobile catalog-trainer__header-btn--mobile">Фильтры <span><img src="images/coaches/filters.svg" alt="img"></span></button>
+									
+									<select class="custom-select catalog-trainer__select-sort coaches-order__select games-search__select games-search__item">
+										<option value="name">Сортировать</option>
+										<option value="id">Сначала дешевле</option>
+										<option value="id">Сначала дороже</option>
+										<option value="id">По рейтингу</option>
+										<option value="id">По количеству отзывов</option>
+										<option value="id">По опыту</option>
+										
+									</select>
+								</div>
+
+								<div class="catalog-trainer__main-body">
+									<div class="catalog-trainer__main-boby-inner">
+
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+										
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+										
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+										
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+										
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+										
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+										
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+
+										<div class="catalog-trainer__main-body-column" >
+											<div class="catalog-trainer__card">
+												<div class="catalog-trainer__card-body">
+													<div class="catalog-trainer__card-label">
+														EU
+													</div>
+
+													<div class="catalog-request__card-title">World of Tanks</div>
+
+													<div class="catalog-request__card-subtitle">Опыт</div>
+													<div class="catalog-request__card-descr">До полугода</div>
+
+													<div class="catalog-trainer__card-info">
+														<div class="games-offers__seller">
+															<a href="#" class="card-ava games-offers__seller-ava">
+																<img src="images/content/seller-ava.jpg" alt="img"/>
+															</a>
+															<div class="games-offers__seller-info">
+															<a href="#" class="games-offers__seller-name">nickname151547</a>
+															
+															<div class="games-offers__seller-old">На сайте 11 месяцев</div>
+															</div>
+														</div>
+													</div>
+													<div class="catalog-trainer__card-price">10$/час</div>
+												</div>
+
+												<button class="catalog-request__card-btn">Откликнуться</button>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+
+								<a href="#" class="trainer-feedback__loadmore-btn coaches-content__loadmore-btn">
+									<div class="trainer-feedback__loadmore-text coaches-content__loadmore-text">Показать больше</div>	
+								</a>	
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- FOOTER -->
+			<footer class="footer">
+				<div class="container">
+				<div class="footer__inner">
+					<p class="footer__copy">© 2021 Название сервиса</p>
+					<div class="footer__links">
+						<a href="#" class="footer__links-item">Политика конфиденциальности</a>
+						<a href="#" class="footer__links-item">Политика cookie</a>
+					</div>
+					<div class="footer__box">
+						<div class="footer__contacts">
+						<a href="mailto:example-mail22@gmail.com" class="footer__contacts-item"
+							>example-mail22@gmail.com</a
+						>
+						<a href="tel:7091504974923" class="footer__contacts-item">+709 (150) 497-49-23</a>
+							<div class="header__menu-item footer__menu-item--help">
+								<a href="#" class="header__menu-link footer__user-help">Помощь
+									<img class="footer__user-help--toggler" src="images/icons/toggler.svg" alt="img"/>
+								</a>
+								<div class="footer-help">
+
+									<a class="header-logined__item open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+										Написать в тех поддержку
+									</a>
+
+									<a href="#" class="header-logined__item">FAQ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</footer>
+		</div>
+		catalog-trainer__header-btn--mobile
+
+		<!-- POPUP-TECHSERVICE -->
+		<div class="popup-edit-offer user-popup mfp-with-anim mfp-hide" id="popup-techservice">
+			<div class="popup-trainer__close close-popup">
+				<svg
+					width="48"
+					height="48"
+					viewBox="0 0 48 48"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+					d="M16 16L31.9999 31.9999"
+					stroke="#A6B1B8"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+					<path
+					d="M16.0001 31.9999L32 16"
+					stroke="#A6B1B8"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
+			<div class="close-popup popup-trainer__close--mobile">
+				<svg
+					width="48"
+					height="48"
+					viewBox="0 0 48 48"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg">
+					<path
+					d="M16 16L31.9999 31.9999"
+					stroke="#fff"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+					<path
+					d="M16.0001 31.9999L32 16"
+					stroke="#fff"
+					stroke-width="3"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					/>
+				</svg>
+			</div>
+			<div class="popup-trainer__head user-popup__head">Написать в техподдержку</div>
+	
+	
+	
+			<form class="user-popup__box" autocomplete="off" data-popup="form-in">
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Адрес эл. почты</div>
+					<div class="user-popup__info-inputWrapper">
+						<input class="popup-techservice__input" type="text">
+					</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="user-popup__info-inputWrapper">
+					<div class="popup-edit-offer__label">Тема</div>
+					<select class="user-popup__select" style="display: none;">
+						<option value="i">-</option>
+						<option value="i">1</option>
+						<option value="i">2</option>
+						<option value="i">3</option>
+						<option value="i">4</option>
+						<option value="i">5</option>
+					</select>
+					</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+	
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Логин</div>
+						<div class="user-popup__info-inputWrapper">
+							<input class="popup-techservice__input" type="text">
+						</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+				
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Номер заказа</div>
+					<div class="user-popup__info-inputWrapper">
+						<input class="popup-techservice__input" type="text">
+					</div>
+					<div class="popup-edit-offer__label">Если ваш запрос не связан с заказом, поставьте прочерк</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+			
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="user-popup__info-inputWrapper">
+						<div class="popup-edit-offer__input-box">
+						<div class="popup-edit-offer__label">Описание проблемы</div>
+						<div class="popup-edit-offer__input-box">
+							<textarea class="popup-textarea popup-edit-offer__text" placeholder="Постарайтесь описать всё как можно подробнее и указать все детали (это позволит решить проблему быстрее)"></textarea>
+							</div>
+					</div>
+					</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+
+
+				<div class="popup-techservice__add-box">
+					<a class="popup-techservice__add-link" href="#">Добавить файл*</a>
+					<span> или</span>
+					<div class="popup-techservice__add-space">
+						<img src="images/exchange/images.svg" alt="img">
+						<p>перетащите файлы сюда*</p>
+					</div>
+				</div>
+				<div class="popup-techservice__label">* - не обязательно</div>
+	
+				<div class="popup-trainer__links user-popup__links">
+					<button type="submit" data-popup="submit" class="user-popup__link">Отправить</button>
+				</div>
+	
+			</form>
+			</div>
+		<!-- /POPUP-TECHSERVICE -->
+	
+	</body>
+</html>

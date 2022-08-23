@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- device-width, initial-scale=1.0 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Myafk</title>
+
+    <!-- favicon -->
+		<link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="theme-color" content="#ffffff">
+   
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
+    <!-- <link rel="stylesheet" href="css/mystyle.css" type="text/css" media="all" /> -->
+
+		<!-- Script -->
+		<script src="js/counter.js" defer></script>
+		<script src="js/main.min.js" defer></script>
+
+
+    <!-- Meta for IOS -->
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+
+    <!-- icon -->
+    <link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+
+      <!-- HEADER -->
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__top">
+              <a href="{{ route('home') }}" class="header__logo">
+                <img src="images/global/logo.svg" alt="img"/>
+                <div class="header__logo-name">Myafk</div>
+            </a>
+              <form class="header__search-form" action="https://myafk.pro/catalog">
+								<div class="header__search">
+										<button class="header__search-button"></button>
+										<input class="header__search-input" placeholder="Я ищу" type="text" />
+										<div class="header__search-mobile">
+											<img src="images/icons/search-m.svg" alt="img" />
+										</div>
+										<button class="header__search-button-reset"></button>
+								</div>
+							</form>
+              
+              <div class="header__user">
+                <div class="header__user--logined">
+                  <a href="#" class="header__user-notiffications">
+                    <span>2</span>
+                    <img src="images/icons/notiffications.svg" alt="" />
+                  </a>
+                  <a href="#" class="header__user-avatar">
+                    <img class="header__user-avatar--ava" src="images/content/user.svg" alt=""/>
+                    <img class="header__user-avatar--toggler" src="images/icons/toggler.svg" alt=""/>
+                  </a>
+
+                  <div class="header-logined">
+                    <a href="#" class="header-logined__item">Профиль</a>
+                    <a href="#" class="header-logined__item">Настройки</a>
+                    <a href="#" class="header-logined__item notification">Сообщения <span>2</span></a>
+                    <a href="#" class="header-logined__item">Выйти</a>
+                  </div>
+                </div>
+
+                <div class="header__user--guest">
+                  <a href="#" class="header__user-signin">Войти</a>
+                  <a href="#" class="header__user-signup">Зарегистрироваться</a>
+                </div>
+              </div>
+
+              <div class="header__burger">
+                <a href="#" class="header__user-notiffications">
+                  <span>2</span>
+                  <img src="images/icons/notiffications.svg" alt="" />
+                </a>
+                <img src="images/icons/burger.svg" alt="" />
+              </div>
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Биржа ценностей</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Лутбоксы</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Тренеры</a>
+                </li>
+                <li class="header__menu-item active">
+                  <a href="#" class="header__menu-link">Новости</a>
+                </li>
+                <li class="header__menu-item mobile-breakpoint--670">
+                  <a href="#" class="header__menu-link">Статьи</a>
+                </li>
+                <li class="header__menu-item mobile-breakpoint--670">
+                  <a href="#" class="header__menu-link">Стримы</a>
+                </li>
+                <li class="header__menu-item header__menu-item--help">
+									<a href="#" class="header__menu-link header__user-help">Помощь
+										<img class="header__user-help--toggler" src="images/icons/toggler.svg" alt="img"/>
+									</a>
+									<div class="header-help">
+                    <a class="header-logined__item open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+                      Написать в тех поддержку
+                    </a>
+                    <a href="#" class="header-logined__item">FAQ</a>
+									</div>
+								</li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+     
+      <div class="header-mobile">
+        <div class="header-mobile__inner">
+          <div class="header-mobile__close">
+            <img src="images/icons/close-menu.svg" alt="" />
+          </div>
+          <div class="header-mobile__user">
+            <div class="header-mobile__user--guest">
+              <a href="#" class="header__user-signin">Войти</a>
+              <a href="#" class="header__user-signup">Зарегистрироваться</a>
+            </div>
+            <div class="header-mobile__user--logined">
+              <a href="#" class="header-mobile__user-link p">
+                <div class="header-mobile__user-ava">
+                  <img src="images/content/user.svg" alt="" />
+                </div>
+                <p class="header-mobile__user-p">Профиль</p>
+              </a>
+              <a href="#" class="header-mobile__user-link">Настройки</a>
+              <a href="#" class="header-mobile__user-link notification">Сообщения <span>2</span></a>
+              <a href="#" class="header-mobile__user-link">Выйти</a>
+            </div>
+          </div>
+          <nav class="header-mobile__list">
+            <a href="#" class="header-mobile__link mobile-breakpoint--670">Биржа ценностей</a>
+            <a href="#" class="header-mobile__link mobile-breakpoint--670">Лутбоксы</a>
+            <a href="#" class="header-mobile__link mobile-breakpoint--670">Тренеры</a>
+            <a href="#" class="header-mobile__link mobile-breakpoint--670">Стримы</a>
+            <a href="#" class="header-mobile__link active">Новости</a>
+            <a href="#" class="header-mobile__link">Статьи</a>
+            <div class="header__menu-link header__menu-link--help">
+              <div class="help-mobile__box lk-main__box">
+                <div class="help-mobile__item lk-main__item">
+                  <div class="help-mobile__item-inner lk-main__item-box">
+                    <a href="#" class="help-mobile__title header-mobile__link lk-main__item-toggler">Помощь
+                      <img src="images/icons/toggler.svg" alt="img" />
+                    </a>
+                  </div>
+                  <div class="header-mobile__help-list lk-main__item-more">
+                    <a class="header-mobile__help-sublink open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+                      Написать в тех поддержку
+                    </a>
+                    <a href="#" class="header-mobile__help-sublink">FAQ</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="search-mobile">
+        <button class="search-mobile__search"></button>
+        <input type="text" placeholder="Я ищу" />
+        <button class="search-mobile__reset"></button>
+      </div>
+
+
+
+      <!-- MAIN -->
+      <main class="news__main main">
+        <section class="news__section">
+          <div class="news__container container">
+           
+            <aside class="news__sidebar">
+              <h2 class="news__sidebar-title">Новости</h2>
+              <div class="news__sidebar-body">
+                <a class="news__sidebar-item active" href="#">Все</a>
+                <a class="news__sidebar-item" href="#">Новинки</a>
+                <a class="news__sidebar-item" href="#">Популярное</a>
+                <a class="news__sidebar-item" href="#">Пк</a>
+                <a class="news__sidebar-item" href="#">Xbox One</a>
+                <a class="news__sidebar-item" href="#">Playstation 5</a>
+                <a class="news__sidebar-item" href="#">VR</a>
+                <a class="news__sidebar-item" href="#">Nintendo Switch</a>
+                <a class="news__sidebar-item" href="#">Мобильные</a>
+                <a class="news__sidebar-item" href="#">Киберспорт</a>
+                <a class="news__sidebar-item" href="#">Индустрия</a>
+              </div>
+            </aside>
+
+            <div class="news__body">
+              <div class="sidebar-mobile">
+                <div class="sidebar-mobile__item lk-main__item">
+                  <div class="sidebar-mobile__item-box lk-main__item-box">
+                     <h2 class="sidebar-mobile__title">Новости</h2>
+                      <div class="sidebar-mobile__toggler lk-main__item-toggler">
+                        <img src="images/news/toggler-arrow.svg" alt="img"/>
+                      </div>
+                  </div>
+
+                  <div class="sidebar-mobile__item-more lk-main__item-more">
+                    <div class="sidebar-mobile__item-more-box lk-main__item-more-box">
+                      <a class="sidebar-mobile__link active" href="#">Все</a>
+                      <a class="sidebar-mobile__link" href="#">Новинки</a>
+                      <a class="sidebar-mobile__link" href="#">Популярное</a>
+                      <a class="sidebar-mobile__link" href="#">Пк</a>
+                      <a class="sidebar-mobile__link" href="#">Xbox One</a>
+                      <a class="sidebar-mobile__link" href="#">Playstation 5</a>
+                      <a class="sidebar-mobile__link" href="#">VR</a>
+                      <a class="sidebar-mobile__link" href="#">Nintendo Switch</a>
+                      <a class="sidebar-mobile__link" href="#">Мобильные</a>
+                      <a class="sidebar-mobile__link" href="#">Киберспорт</a>
+                      <a class="sidebar-mobile__link" href="#">Индустрия</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <h2 class="news__body-title">Все новости</h2>
+
+              <div class="news__body-search-box">
+                <div class="news__body-search header__search">
+                  <button class="header__search-button"></button>
+                  <input class="header__search-input" placeholder="Я ищу" type="text" />
+                </div>
+                <button class="news__body-search-btn">Найти</button>
+              </div>
+
+              <div class="news__body-inner">
+                <a href="#" class="news__body-item">
+                  <div class="news__body-card body-card">
+                    <div class="body-card__img-box">
+                      <img class="body-card__img" src="images/news/card-1.jpg" alt="img">
+                    </div>
+                    <div class="body-card__content">
+                      <div class="body-card__content-inner">
+                        <div class="body-card__top">
+                          <div class="body-card__label">Playstation 5</div>
+                          <div class="body-card__label">Pc</div>
+                        </div>
+                        <div class="body-card__controls">
+                          <div class="like-box__inner">
+                            <div class="like-box__dislike like-box">
+                              10
+                              <svg class="dislike">
+                                <use xlink:href="#dislike"></use>
+                              </svg>
+                            </div>
+  
+                            <div class="like-box__like like-box">
+                              64
+                              <svg class="like">
+                                <use xlink:href="#like"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="comment-box">
+                            <svg class="comment">
+                              <use xlink:href="#comment"></use>
+                            </svg>
+                            <div class="comment__number">(57)</div>
+                          </div>
+                        </div>
+  
+                        <div class="news__body-card-title">Слух: ремейк The Last of Us выйдет 2 сентября — в том числе на ПК</div>
+                      
+                        <div class="news__body-card-text-box">
+                          <p class="news__body-card-text">
+                            Пользователь «Твиттера» insider_wtf — инсайдер, который возник неизвестно откуда. Ранее он абсолютно точно предсказал содержание последнего выпуска State of Play (вплоть до дат релиза!) и озвучил название хоррора от Хидео Кодзимы (Hideo Kojima), а теперь, похоже, сливает день выхода ремейка The Last of Us.
+                          </p>
+                        </div>
+  
+                      </div>
+
+                      <div class="news__body-card-days">Сегодня</div>
+
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="news__body-item">
+                  <div class="news__body-card body-card">
+                    <div class="body-card__img-box">
+                      <img class="body-card__img" src="images/news/card-2.jpg" alt="img">
+                    </div>
+                    <div class="body-card__content">
+                      <div class="body-card__content-inner">
+                        <div class="body-card__top">
+                          <div class="body-card__label">Индустрия</div>
+                          <div class="body-card__label">Playstation 5</div>
+                          <div class="body-card__label">Pc</div>
+                        </div>
+                        <div class="body-card__controls">
+                          <div class="like-box__inner">
+                            <div class="like-box__dislike like-box">
+                              10
+                              <svg class="dislike">
+                                <use xlink:href="#dislike"></use>
+                              </svg>
+                            </div>
+  
+                            <div class="like-box__like like-box">
+                              64
+                              <svg class="like">
+                                <use xlink:href="#like"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="comment-box">
+                            <svg class="comment">
+                              <use xlink:href="#comment"></use>
+                            </svg>
+                            <div class="comment__number">(57)</div>
+                          </div>
+                        </div>
+  
+                        <div class="news__body-card-title">Loretta — психологический триллер, навеянный американской живописью XX века и фильмами Хичкока</div>
+                      
+                        <div class="news__body-card-text-box">
+                          <p class="news__body-card-text">
+                            Пользователь «Твиттера» insider_wtf — инсайдер, который возник неизвестно откуда. Ранее он абсолютно точно предсказал содержание последнего выпуска State of Play (вплоть до дат релиза!) и озвучил название хоррора от Хидео Кодзимы (Hideo Kojima), а теперь, похоже, сливает день выхода ремейка The Last of Us.
+                          </p>
+                        </div>
+  
+                      </div>
+
+                      <div class="news__body-card-days">Вчера</div>
+
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="news__body-item">
+                  <div class="news__body-card body-card">
+                    <div class="body-card__img-box">
+                      <img class="body-card__img" src="images/news/card-3.jpg" alt="img">
+                    </div>
+                    <div class="body-card__content">
+                      <div class="body-card__content-inner">
+                        <div class="body-card__top">
+                          <div class="body-card__label">Индустрия</div>
+                          <div class="body-card__label">Киберспорт</div>
+                          <div class="body-card__label">Pc</div>
+                        </div>
+                        <div class="body-card__controls">
+                          <div class="like-box__inner">
+                            <div class="like-box__dislike like-box">
+                              10
+                              <svg class="dislike">
+                                <use xlink:href="#dislike"></use>
+                              </svg>
+                            </div>
+  
+                            <div class="like-box__like like-box">
+                              64
+                              <svg class="like">
+                                <use xlink:href="#like"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="comment-box">
+                            <svg class="comment">
+                              <use xlink:href="#comment"></use>
+                            </svg>
+                            <div class="comment__number">(57)</div>
+                          </div>
+                        </div>
+  
+                        <div class="news__body-card-title">LStorm — новый персонаж в Valorant</div>
+                      
+                        <div class="news__body-card-text-box">
+                          <p class="news__body-card-text">
+                            Пользователь «Твиттера» insider_wtf — инсайдер, который возник неизвестно откуда. Ранее он абсолютно точно предсказал содержание последнего выпуска State of Play (вплоть до дат релиза!) и озвучил название хоррора от Хидео Кодзимы (Hideo Kojima), а теперь, похоже, сливает день выхода ремейка The Last of Us.
+                          </p>
+                        </div>
+  
+                      </div>
+
+                      <div class="news__body-card-days">10 июня 2022</div>
+
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="news__body-item">
+                  <div class="news__body-card body-card">
+                    <div class="body-card__img-box">
+                      <img class="body-card__img" src="images/news/card-1.jpg" alt="img">
+                    </div>
+                    <div class="body-card__content">
+                      <div class="body-card__content-inner">
+                        <div class="body-card__top">
+                          <div class="body-card__label">Playstation 5</div>
+                          <div class="body-card__label">Pc</div>
+                        </div>
+                        <div class="body-card__controls">
+                          <div class="like-box__inner">
+                            <div class="like-box__dislike like-box">
+                              10
+                              <svg class="dislike">
+                                <use xlink:href="#dislike"></use>
+                              </svg>
+                            </div>
+  
+                            <div class="like-box__like like-box">
+                              64
+                              <svg class="like">
+                                <use xlink:href="#like"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="comment-box">
+                            <svg class="comment">
+                              <use xlink:href="#comment"></use>
+                            </svg>
+                            <div class="comment__number">(57)</div>
+                          </div>
+                        </div>
+  
+                        <div class="news__body-card-title">Слух: ремейк The Last of Us выйдет 2 сентября — в том числе на ПК</div>
+                      
+                        <div class="news__body-card-text-box">
+                          <p class="news__body-card-text">
+                            Пользователь «Твиттера» insider_wtf — инсайдер, который возник неизвестно откуда. Ранее он абсолютно точно предсказал содержание последнего выпуска State of Play (вплоть до дат релиза!) и озвучил название хоррора от Хидео Кодзимы (Hideo Kojima), а теперь, похоже, сливает день выхода ремейка The Last of Us.
+                          </p>
+                        </div>
+  
+                      </div>
+
+                      <div class="news__body-card-days">Сегодня</div>
+
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="news__body-item">
+                  <div class="news__body-card body-card">
+                    <div class="body-card__img-box">
+                      <img class="body-card__img" src="images/news/card-2.jpg" alt="img">
+                    </div>
+                    <div class="body-card__content">
+                      <div class="body-card__content-inner">
+                        <div class="body-card__top">
+                          <div class="body-card__label">Индустрия</div>
+                          <div class="body-card__label">Playstation 5</div>
+                          <div class="body-card__label">Pc</div>
+                        </div>
+                        <div class="body-card__controls">
+                          <div class="like-box__inner">
+                            <div class="like-box__dislike like-box">
+                              10
+                              <svg class="dislike">
+                                <use xlink:href="#dislike"></use>
+                              </svg>
+                            </div>
+  
+                            <div class="like-box__like like-box">
+                              64
+                              <svg class="like">
+                                <use xlink:href="#like"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="comment-box">
+                            <svg class="comment">
+                              <use xlink:href="#comment"></use>
+                            </svg>
+                            <div class="comment__number">(57)</div>
+                          </div>
+                        </div>
+  
+                        <div class="news__body-card-title">Loretta — психологический триллер, навеянный американской живописью XX века и фильмами Хичкока</div>
+                      
+                        <div class="news__body-card-text-box">
+                          <p class="news__body-card-text">
+                            Пользователь «Твиттера» insider_wtf — инсайдер, который возник неизвестно откуда. Ранее он абсолютно точно предсказал содержание последнего выпуска State of Play (вплоть до дат релиза!) и озвучил название хоррора от Хидео Кодзимы (Hideo Kojima), а теперь, похоже, сливает день выхода ремейка The Last of Us.
+                          </p>
+                        </div>
+  
+                      </div>
+
+                      <div class="news__body-card-days">Вчера</div>
+
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#" class="news__body-item">
+                  <div class="news__body-card body-card">
+                    <div class="body-card__img-box">
+                      <img class="body-card__img" src="images/news/card-3.jpg" alt="img">
+                    </div>
+                    <div class="body-card__content">
+                      <div class="body-card__content-inner">
+                        <div class="body-card__top">
+                          <div class="body-card__label">Индустрия</div>
+                          <div class="body-card__label">Киберспорт</div>
+                          <div class="body-card__label">Pc</div>
+                        </div>
+                        <div class="body-card__controls">
+                          <div class="like-box__inner">
+                            <div class="like-box__dislike like-box">
+                              10
+                              <svg class="dislike">
+                                <use xlink:href="#dislike"></use>
+                              </svg>
+                            </div>
+  
+                            <div class="like-box__like like-box">
+                              64
+                              <svg class="like">
+                                <use xlink:href="#like"></use>
+                              </svg>
+                            </div>
+                          </div>
+                          <div class="comment-box">
+                            <svg class="comment">
+                              <use xlink:href="#comment"></use>
+                            </svg>
+                            <div class="comment__number">(57)</div>
+                          </div>
+                        </div>
+  
+                        <div class="news__body-card-title">LStorm — новый персонаж в Valorant</div>
+                      
+                        <div class="news__body-card-text-box">
+                          <p class="news__body-card-text">
+                            Пользователь «Твиттера» insider_wtf — инсайдер, который возник неизвестно откуда. Ранее он абсолютно точно предсказал содержание последнего выпуска State of Play (вплоть до дат релиза!) и озвучил название хоррора от Хидео Кодзимы (Hideo Kojima), а теперь, похоже, сливает день выхода ремейка The Last of Us.
+                          </p>
+                        </div>
+  
+                      </div>
+
+                      <div class="news__body-card-days">10 июня 2022</div>
+
+                    </div>
+                  </div>
+                </a>
+
+                <div class="lk-pagination">
+                  <a class="lk-pagination__arrow" href="#"
+                    ><svg
+                      width="6"
+                      height="12"
+                      viewBox="0 0 6 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.310932 5.70829C0.142511 5.8663 0.14251 6.1337 0.310931 6.29171L5.32632 10.9971C5.58175 11.2368 6 11.0557 6 10.7054L6 1.2946C6 0.944349 5.58175 0.763239 5.32632 1.00288L0.310932 5.70829Z"
+                        fill="#070C11"
+                      />
+                    </svg>
+                  </a>
+                  <a class="lk-pagination__item active" href="#">1</a>
+                  <a class="lk-pagination__item" href="#">2</a>
+                  <a class="lk-pagination__item" href="#">3</a>
+                  <div>
+                    <svg
+                      width="20"
+                      height="4"
+                      viewBox="0 0 20 4"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <circle cx="2" cy="2" r="2" fill="#070C11" />
+                      <circle cx="10" cy="2" r="2" fill="#070C11" />
+                      <circle cx="18" cy="2" r="2" fill="#070C11" />
+                    </svg>
+                  </div>
+                  <a class="lk-pagination__item" href="#">245</a>
+                  <a class="lk-pagination__arrow" href="#"
+                    ><svg
+                      width="6"
+                      height="12"
+                      viewBox="0 0 6 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5.68907 5.70829C5.85749 5.8663 5.85749 6.1337 5.68907 6.29171L0.673684 10.9971C0.418255 11.2368 1.378e-07 11.0557 1.33623e-07 10.7054L2.14003e-08 1.2946C1.72237e-08 0.944349 0.418255 0.763239 0.673684 1.00288L5.68907 5.70829Z"
+                        fill="#070C11"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+      </main>
+
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer__inner">
+            <p class="footer__copy">© 2021 Название сервиса</p>
+            <div class="footer__links">
+              <a href="#" class="footer__links-item">Политика конфиденциальности</a>
+              <a href="#" class="footer__links-item">Политика cookie</a>
+            </div>
+            <div class="footer__box">
+              <div class="footer__contacts">
+                <a href="mailto:example-mail22@gmail.com" class="footer__contacts-item"
+                  >example-mail22@gmail.com</a
+                >
+                <a href="tel:7091504974923" class="footer__contacts-item">+709 (150) 497-49-23</a>
+                <div class="header__menu-item footer__menu-item--help">
+									<a href="#" class="header__menu-link footer__user-help">Помощь
+										<img class="footer__user-help--toggler" src="images/icons/toggler.svg" alt="img"/>
+									</a>
+									<div class="footer-help">
+                    <a class="header-logined__item open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+                      Написать в тех поддержку
+                     </a> 
+                      <a href="#" class="header-logined__item">FAQ</a>
+									</div>
+								</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+		<!-- POPUP-TECHSERVICE -->
+		<div class="popup-edit-offer user-popup mfp-with-anim mfp-hide" id="popup-techservice">
+      <div class="popup-trainer__close close-popup">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+          d="M16 16L31.9999 31.9999"
+          stroke="#A6B1B8"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+          <path
+          d="M16.0001 31.9999L32 16"
+          stroke="#A6B1B8"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="close-popup popup-trainer__close--mobile">
+        <svg
+          width="48"
+          height="48"
+          viewBox="0 0 48 48"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+          d="M16 16L31.9999 31.9999"
+          stroke="#fff"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+          <path
+          d="M16.0001 31.9999L32 16"
+          stroke="#fff"
+          stroke-width="3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="popup-trainer__head user-popup__head">Написать в техподдержку</div>
+  
+  
+  
+      <form class="user-popup__box" autocomplete="off" data-popup="form-in">
+        <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+          <div class="popup-edit-offer__label">Адрес эл. почты</div>
+          <div class="user-popup__info-inputWrapper">
+            <input class="popup-techservice__input" type="text">
+          </div>
+          <div class="user-popup__info-status status"></div>
+        </div>
+  
+        <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+          <div class="user-popup__info-inputWrapper">
+          <div class="popup-edit-offer__label">Тема</div>
+          <select class="user-popup__select" style="display: none;">
+            <option value="i">-</option>
+            <option value="i">1</option>
+            <option value="i">2</option>
+            <option value="i">3</option>
+            <option value="i">4</option>
+            <option value="i">5</option>
+          </select>
+          </div>
+          <div class="user-popup__info-status status"></div>
+        </div>
+  
+        <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+          <div class="popup-edit-offer__label">Логин</div>
+            <div class="user-popup__info-inputWrapper">
+              <input class="popup-techservice__input" type="text">
+            </div>
+          <div class="user-popup__info-status status"></div>
+        </div>
+        
+        <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+          <div class="popup-edit-offer__label">Номер заказа</div>
+          <div class="user-popup__info-inputWrapper">
+            <input class="popup-techservice__input" type="text">
+          </div>
+          <div class="popup-edit-offer__label">Если ваш запрос не связан с заказом, поставьте прочерк</div>
+          <div class="user-popup__info-status status"></div>
+        </div>
+      
+        <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+          <div class="user-popup__info-inputWrapper">
+            <div class="popup-edit-offer__input-box">
+            <div class="popup-edit-offer__label">Описание проблемы</div>
+            <div class="popup-edit-offer__input-box">
+              <textarea class="popup-textarea popup-edit-offer__text" placeholder="Постарайтесь описать всё как можно подробнее и указать все детали (это позволит решить проблему быстрее)"></textarea>
+              </div>
+          </div>
+          </div>
+          <div class="user-popup__info-status status"></div>
+        </div>
+  
+  
+        <div class="popup-techservice__add-box">
+          <a class="popup-techservice__add-link" href="#">Добавить файл*</a>
+          <span> или</span>
+          <div class="popup-techservice__add-space">
+            <img src="images/exchange/images.svg" alt="img">
+            <p>перетащите файлы сюда*</p>
+          </div>
+        </div>
+        <div class="popup-techservice__label">* - не обязательно</div>
+  
+        <div class="popup-trainer__links user-popup__links">
+          <button type="submit" data-popup="submit" class="user-popup__link">Отправить</button>
+        </div>
+  
+      </form>
+    </div>
+    <!-- /POPUP-TECHSERVICE -->
+
+
+
+    <!-- SPRITE-SVG -->
+      <!-- dislike -->
+      <svg display="none">
+        <symbol id="dislike"  viewBox="0 0 22 22">
+          <path d="M15.5197 4.65002L12.4197 2.25002C12.0197 1.85002 11.1197 1.65002 10.5197 1.65002H6.71973C5.51973 1.65002 4.21973 2.55002 3.91973 3.75002L1.51973 11.05C1.01973 12.45 1.91973 13.65 3.41973 13.65H7.41973C8.01973 13.65 8.51973 14.15 8.41973 14.85L7.91973 18.05C7.71973 18.95 8.31973 19.95 9.21973 20.25C10.0197 20.55 11.0197 20.15 11.4197 19.55L15.5197 13.45" stroke-width="1.5" stroke-miterlimit="10"/>
+          <path d="M20.6201 4.65V14.45C20.6201 15.85 20.0201 16.35 18.6201 16.35H17.6201C16.2201 16.35 15.6201 15.85 15.6201 14.45V4.65C15.6201 3.25 16.2201 2.75 17.6201 2.75H18.6201C20.0201 2.75 20.6201 3.25 20.6201 4.65Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>	
+      </svg>
+      <!-- /dislike -->
+
+      <!-- like -->
+      <svg display="none">
+        <symbol id="like"  viewBox="0 0 22 22">
+          <path d="M6.47998 17.35L9.57998 19.75C9.97998 20.15 10.88 20.35 11.48 20.35H15.28C16.48 20.35 17.78 19.45 18.08 18.25L20.48 10.95C20.98 9.54997 20.08 8.34997 18.58 8.34997H14.58C13.98 8.34997 13.48 7.84997 13.58 7.14997L14.08 3.94997C14.28 3.04997 13.68 2.04997 12.78 1.74997C11.98 1.44997 10.98 1.84997 10.58 2.44997L6.47998 8.54997" stroke-width="1.5" stroke-miterlimit="10"/>
+          <path d="M1.37988 17.35V7.55002C1.37988 6.15002 1.97988 5.65002 3.37988 5.65002H4.37988C5.77988 5.65002 6.37988 6.15002 6.37988 7.55002V17.35C6.37988 18.75 5.77988 19.25 4.37988 19.25H3.37988C1.97988 19.25 1.37988 18.75 1.37988 17.35Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>	
+      </svg>
+      <!-- /like -->
+
+      <!-- comment -->
+      <svg display="none">
+        <symbol id="comment"  viewBox="0 0 22 22">
+          <path d="M15 1H7C3 1 1 3 1 7V20C1 20.55 1.45 21 2 21H15C19 21 21 19 21 15V7C21 3 19 1 15 1Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 8.5H16" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 13.5H13" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>	
+      </svg>
+      <!-- /comment -->
+
+      <!-- <svg class="dislike">
+        <use xlink:href="#dislike"></use>
+      </svg> -->
+
+    <!-- /SPRITE-SVG -->
+
+
+  </body>
+</html>

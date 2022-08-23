@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- device-width, initial-scale=1.0 -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Myafk</title>
+
+	<!-- favicon -->
+	<link rel="icon" type="image/png" sizes="16x16"  href="/favicons/favicon-16x16.png">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="theme-color" content="#ffffff">
+	
+	<!-- Fonts -->
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap"/>
+
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/style.min.css" type="text/css" media="all" />
+	<!-- <link rel="stylesheet" href="css/mystyle.css" type="text/css" media="all" /> -->
+
+
+	<!-- Script -->
+	<script src="js/main.min.js" defer></script>
+
+
+	<!-- Meta for IOS -->
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="format-detection" content="date=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="format-detection" content="email=no" />
+
+	<!-- icon -->
+	<link rel="shortcut icon" href="images/icons/favicon.svg" type="image/x-icon" />
+ 	</head>
+	
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<div class="header__top">
+							<a href="{{ route('home') }}" class="header__logo">
+                        <img src="images/global/logo.svg" alt="img"/>
+                        <div class="header__logo-name">Myafk</div>
+                    </a>
+						<form class="header__search-form" action="https://myafk.pro/catalog">
+							<div class="header__search">
+									<button class="header__search-button"></button>
+									<input class="header__search-input" placeholder="Я ищу" type="text" />
+									<div class="header__search-mobile">
+										<img src="images/icons/search-m.svg" alt="img" />
+									</div>
+									<button class="header__search-button-reset"></button>
+							</div>
+						</form>
+						
+						<div class="header__user">
+							<div class="header__user--logined">
+							  <a href="#" class="header__user-notiffications">
+								 <span>2</span>
+								 <img src="images/icons/notiffications.svg" alt="" />
+							  </a>
+							  <a href="#" class="header__user-avatar">
+								 <img class="header__user-avatar--ava" src="images/content/user.svg" alt=""/>
+								 <img class="header__user-avatar--toggler" src="images/icons/toggler.svg" alt=""/>
+							  </a>
+	  
+							  <div class="header-logined">
+								 <a href="#" class="header-logined__item">Профиль</a>
+								 <a href="#" class="header-logined__item">Настройки</a>
+								 <a href="#" class="header-logined__item notification">Сообщения <span>2</span></a>
+								 <a href="#" class="header-logined__item">Выйти</a>
+							  </div>
+							</div>
+	  
+							<div class="header__user--guest">
+							  <a href="#" class="header__user-signin">Войти</a>
+							  <a href="#" class="header__user-signup">Зарегистрироваться</a>
+							</div>
+						 </div>
+
+						<div class="header__burger">
+							<a href="#" class="header__user-notiffications">
+								<span>2</span>
+								<img src="images/icons/notiffications.svg" alt="img" />
+							</a>
+							<img src="images/icons/burger.svg" alt="img" />
+						</div>
+						</div>
+						<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Биржа ценностей</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Лутбоксы</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Тренеры</a>
+							</li>
+							<li class="header__menu-item">
+								<a href="#" class="header__menu-link">Новости</a>
+							</li>
+							<li class="header__menu-item mobile-breakpoint--670">
+								<a href="#" class="header__menu-link">Статьи</a>
+							</li>
+							<li class="header__menu-item mobile-breakpoint--670">
+								<a href="#" class="header__menu-link">Стримы</a>
+							</li>
+							<li class="header__menu-item header__menu-item--help">
+								<a href="#" class="header__menu-link header__user-help">Помощь
+									<img class="header__user-help--toggler" src="images/icons/toggler.svg" alt="img"/>
+								</a>
+								<div class="header-help">
+									<a class="header-logined__item open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+										Написать в тех поддержку
+									</a>
+									<a href="#" class="header-logined__item">FAQ</a>
+								</div>
+							</li>
+						</ul>
+						</nav>
+					</div>
+
+				</div>
+ 			</header>
+
+			<div class="header-mobile">
+			<div class="header-mobile__inner">
+			<div class="header-mobile__close">
+				<img src="images/icons/close-menu.svg" alt="img" />
+			</div>
+			<div class="header-mobile__user">
+				<div class="header-mobile__user--guest">
+					<a href="#" class="header__user-signin">Войти</a>
+					<a href="#" class="header__user-signup">Зарегистрироваться</a>
+				</div>
+				<div class="header-mobile__user--logined">
+					<a href="#" class="header-mobile__user-link p">
+					<div class="header-mobile__user-ava">
+					<img src="images/content/user.svg" alt="img" />
+					</div>
+					<p class="header-mobile__user-p">Профиль</p>
+					</a>
+					<a href="#" class="header-mobile__user-link">Настройки</a>
+					<a href="#" class="header-mobile__user-link notification">Сообщения <span>2</span></a>
+					<a href="#" class="header-mobile__user-link">Выйти</a>
+				</div>
+			</div>
+			<nav class="header-mobile__list">
+				<a href="#" class="header-mobile__link mobile-breakpoint--670">Биржа ценностей</a>
+				<a href="#" class="header-mobile__link mobile-breakpoint--670">Лутбоксы</a>
+				<a href="#" class="header-mobile__link mobile-breakpoint--670 ">Тренеры</a>
+				<a href="#" class="header-mobile__link mobile-breakpoint--670">Стримы</a>
+				<a href="#" class="header-mobile__link">Новости</a>
+				<a href="#" class="header-mobile__link">Статьи</a>
+				<div class="header__menu-link header__menu-link--help">
+					<div class="help-mobile__box lk-main__box">
+						<div class="help-mobile__item lk-main__item">
+							<div class="help-mobile__item-inner lk-main__item-box">
+								<a href="#" class="help-mobile__title header-mobile__link lk-main__item-toggler">Помощь
+									<img src="images/icons/toggler.svg" alt="img" />
+								</a>
+							</div>
+							<div class="header-mobile__help-list lk-main__item-more">
+								<a class="header-mobile__help-sublink open-popup" href="#popup-techservice" data-effect="mfp-zoom-in">
+									Написать в тех поддержку
+								</a>
+								<a href="#" class="header-mobile__help-sublink">FAQ</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+			</div>
+			</div>
+
+			<div class="search-mobile">
+				<button class="search-mobile__search"></button>
+				<input type="text" placeholder="Я ищу" />
+				<button class="search-mobile__reset"></button>
+			</div>
+
+			<!-- MAIN -->
+			<div class="coaches-message__main main">
+				<div class="lk-box">
+					<div class="coaches-message__container container">
+						<div class="lk-box__inner">
+							<div class="coaches-message__box-main lk-box__main">
+								<div class="coaches-message__right order-page__right order-page__part">
+									<div class="order-page__chat-box">
+										<div class="coaches-message__space-main order-page__chat-main">
+											<div class="exchange-massage__space coaches-message__space">
+												<div class="exchange-massage__space-empty">
+
+													<h2 class="exchange-massage__empty-title">
+														Сообщения
+													</h2>
+
+													<img class="exchange-massage__empty-img" src="images/exchange/message.png" alt="img">
+
+													<p class="exchange-massage__empty-text">Диалогов пока нет</p>
+
+													<a href="#" class="exchange-massage__empty-btn order-success__btn">Вернуться на главную</a>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+      	</div>
+		</div>
+
+
+		<!-- POPUP-TECHSERVICE -->
+		<div class="popup-edit-offer user-popup mfp-with-anim mfp-hide" id="popup-techservice">
+			<div class="popup-trainer__close close-popup">
+			  <svg
+				 width="48"
+				 height="48"
+				 viewBox="0 0 48 48"
+				 fill="none"
+				 xmlns="http://www.w3.org/2000/svg">
+				 <path
+				 d="M16 16L31.9999 31.9999"
+				 stroke="#A6B1B8"
+				 stroke-width="3"
+				 stroke-linecap="round"
+				 stroke-linejoin="round"
+				 />
+				 <path
+				 d="M16.0001 31.9999L32 16"
+				 stroke="#A6B1B8"
+				 stroke-width="3"
+				 stroke-linecap="round"
+				 stroke-linejoin="round"
+				 />
+			  </svg>
+			</div>
+			<div class="close-popup popup-trainer__close--mobile">
+			  <svg
+				 width="48"
+				 height="48"
+				 viewBox="0 0 48 48"
+				 fill="none"
+				 xmlns="http://www.w3.org/2000/svg">
+				 <path
+				 d="M16 16L31.9999 31.9999"
+				 stroke="#fff"
+				 stroke-width="3"
+				 stroke-linecap="round"
+				 stroke-linejoin="round"
+				 />
+				 <path
+				 d="M16.0001 31.9999L32 16"
+				 stroke="#fff"
+				 stroke-width="3"
+				 stroke-linecap="round"
+				 stroke-linejoin="round"
+				 />
+			  </svg>
+			</div>
+			<div class="popup-trainer__head user-popup__head">Написать в техподдержку</div>
+	
+	
+	
+			<form class="user-popup__box" autocomplete="off" data-popup="form-in">
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Адрес эл. почты</div>
+					<div class="user-popup__info-inputWrapper">
+					  <input class="popup-techservice__input" type="text">
+					</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+
+			  <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+				 <div class="user-popup__info-inputWrapper">
+					<div class="popup-edit-offer__label">Тема</div>
+					<select class="user-popup__select" style="display: none;">
+					  <option value="i">-</option>
+					  <option value="i">1</option>
+					  <option value="i">2</option>
+					  <option value="i">3</option>
+					  <option value="i">4</option>
+					  <option value="i">5</option>
+					</select>
+				 </div>
+				 <div class="user-popup__info-status status"></div>
+			  </div>
+	
+			  <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Логин</div>
+						<div class="user-popup__info-inputWrapper">
+							<input class="popup-techservice__input" type="text">
+						</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+			 
+				<div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+					<div class="popup-edit-offer__label">Номер заказа</div>
+					<div class="user-popup__info-inputWrapper">
+					  <input class="popup-techservice__input" type="text">
+					</div>
+					<div class="popup-edit-offer__label">Если ваш запрос не связан с заказом, поставьте прочерк</div>
+					<div class="user-popup__info-status status"></div>
+				</div>
+			
+			  <div class="popup-edit-offer__item popup-trainer__item user-popup__info-inputBox">
+				 <div class="user-popup__info-inputWrapper">
+					 <div class="popup-edit-offer__input-box">
+						<div class="popup-edit-offer__label">Описание проблемы</div>
+						<div class="popup-edit-offer__input-box">
+							<textarea class="popup-textarea popup-edit-offer__text" placeholder="Постарайтесь описать всё как можно подробнее и указать все детали (это позволит решить проблему быстрее)"></textarea>
+						 </div>
+					</div>
+				 </div>
+				 <div class="user-popup__info-status status"></div>
+			  </div>
+
+
+			  <div class="popup-techservice__add-box">
+					<a class="popup-techservice__add-link" href="#">Добавить файл*</a>
+					<span> или</span>
+					<div class="popup-techservice__add-space">
+						<img src="images/exchange/images.svg" alt="img">
+						<p>перетащите файлы сюда*</p>
+					</div>
+			  </div>
+				<div class="popup-techservice__label">* - не обязательно</div>
+	
+			  <div class="popup-trainer__links user-popup__links">
+				 <button type="submit" data-popup="submit" class="user-popup__link">Отправить</button>
+			  </div>
+	
+			</form>
+		 </div>
+		<!-- /POPUP-TECHSERVICE -->
+
+	</body>
+</html>
