@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'PTRootUIWebBold', sans-serif;
+  src: url('PT-Root-UI_Bold.woff2') format('woff2'), url('PT-Root-UI_Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTRootUIWebLight', sans-serif;
+  src: url('PT-Root-UI_Light.woff2') format('woff2'), url('PT-Root-UI_Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTRootUIWebMedium', sans-serif;
+  src: url('PT-Root-UI_Medium.woff2') format('woff2'), url('PT-Root-UI_Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTRootUIWebRegular', sans-serif;
+  src: url('PT-Root-UI_Regular.woff2') format('woff2'),
+    url('PT-Root-UI_Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
